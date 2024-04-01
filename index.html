@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Memory Game</h1>
+      <div class="mode">
+        <button onclick="setMode('normal')">Normal</button>
+        <button onclick="setMode('memes')">Memes</button>
+      </div>
+      <div class="difficulty">
+        <button onclick="setDifficulty('easy')">Fácil</button>
+        <button onclick="setDifficulty('medium')">Medio</button>
+        <button onclick="setDifficulty('hard')">Difícil</button>
+      </div>
+      <div id="board" class="board"></div>
+      <div class="stats">
+        <p>Movimientos: <span id="moves">0</span></p>
+        <p id="time">Tiempo: 0 segundos</p>
+      </div>
+      <button onclick="restartGame()">Reiniciar</button>
+      <h2>Tabla de Posiciones</h2>
+      <table id="leaderboard">
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Tiempo (segundos)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Aquí se mostrarán las filas de la tabla de posiciones -->
+        </tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
